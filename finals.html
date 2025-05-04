@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IP Lookup Site</title>
+  <link rel="stylesheet" href="finals.css" />
+</head>
+<body>
+
+
+  <header class="navbar">
+    <div class="nav-links">
+        <a href="#lookup">IP Lookup</a>
+        <button id="playMusicBtn">Play Music</button>
+        <audio id="bgMusic" src="finals_jennie.mp3"></audio>       
+      </div>
+      
+      
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h2>Welcome!</h2>
+      <p>A Better Site for A better Info? <br>
+         Here we provide an info for you, the fastest the easiest!<br>
+         We'll provide to help you get an informations you needed! <br><br>
+         Just click the button and shwalala!</p>
+    <a href="#lookup" class="cta">Click to scroll down😉</a>
+    <div class="scroll-down">
+      <a href="#lookup">&#8595;</a>
+    </div>
+  </section>
+
+  <!-- Ip Display -->
+  <section id="lookup" class="ip-section">
+    <div class="info-card">
+      <h2>Your IP Details</h2>
+      <button onclick="getMyIP()">Get My IP Info</button>
+        <div id="myInfo" class="popup-box hidden"></div>
+    </div>
+  </section>
+</body>
+
+<script src="finals.js"></script>
+</html>

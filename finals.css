@@ -1,0 +1,220 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-image: url('bg.jpg');
+  color: white;
+  z-index: 1;
+}
+
+#playMusicBtn {
+  background-color: transparent;
+  border: 0.125rem solid wheat;
+  color: wheat;
+  padding: 0.5rem 1rem;
+  border-radius: 1.5rem;
+  cursor: pointer;
+  margin-left: 1.5rem;
+  font-size: 1rem;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+#playMusicBtn:hover {
+  background-color: rgba(18, 78, 10, 0.527);
+  color: rgba(78, 197, 78, 0.301);
+}
+
+
+
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  position: absolute;
+  width: 100%;
+  color: wheat;
+  top: 0;
+  z-index: 1;
+}
+
+
+.nav-links a {
+  margin-left: 1.5rem;
+  text-decoration: none;
+  color: wheat;
+}
+
+.create-btn {
+  background-color: black;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 1.5rem;
+}
+
+/* Hero Section */
+.hero {
+  height: 100vh;
+  position: relative; /* <--- ADD THIS */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-image: url(finals_bg.jpg);
+  background-size: cover;
+  padding: 2rem;
+}
+
+.hero::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 1.5;
+  z-index: 0;
+}
+
+
+.hero h2 {
+  font-size: 2rem;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin-bottom: 0.5rem;
+  z-index: 1;
+  font-weight: bolder;
+}
+
+.bold {
+  font-weight: 600;
+}
+
+.faded {
+  color: gray;
+}
+
+.hero p {
+  font-size: 1.289rem;
+  font-weight: bold;
+  font-family: 'Times New Roman', Times, serif;
+  line-height: 1.5;
+  margin-top: 1.875rem;
+  color: #fffefe;
+  margin-bottom: 2rem;
+  text-align: center;
+  z-index: 1;
+}
+
+a:hover{
+    border-radius: 9.375rem;
+    background-color: black;
+}
+
+
+
+.cta {
+  background-color: rgb(27, 65, 31);
+  color: white;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  padding: 0.75rem 2rem;
+  text-decoration: none;
+  border-radius: 2rem;
+  font-size: 1rem;
+  margin-top: 6.25rem;
+  z-index: 1;
+}
+
+.scroll-down {
+  position: absolute;
+  bottom: 2.5rem;
+  font-size: 2rem;
+  text-align: center;
+  width: 100%;
+}
+
+.scroll-down a {
+  color: wheat;
+  font-weight: bolder;
+  text-decoration: none;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(10px); }
+}
+
+
+/* IP Lookup Section */
+.ip-section {
+  padding: 4rem 2rem;
+  min-height: 100vh;
+}
+
+.info-card {
+    position: relative;
+    padding: 2rem;
+    border-radius: 1rem;
+    max-width: 31.25rem;
+    margin: 5rem auto auto 4.375rem;
+    box-shadow: 0 10px 30px rgba(18, 78, 10, 0.527);
+    text-align: center;
+    line-height: 2;
+    overflow: hidden;
+    color: white;
+    z-index: 1;
+}
+
+.info-card::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url('finals_port.gif');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.4; /* Adjust this for desired fade */
+    z-index: -1; /* Keeps it behind the content */
+    border-radius: 1rem;
+}
+
+
+
+.info-card h2{
+    color: wheat;
+    text-shadow: 0rem 0.125rem 0.375rem rgba(2, 70, 11, 0.671);
+
+}
+
+button {
+  padding: 0.5rem 1.5rem;
+  font-size: 1rem;
+  border: none;
+  background-color: black;
+  color: wheat;
+  font-weight: bold;
+  border-radius: 1rem;
+  cursor: pointer;
+  margin-top: 1rem;
+  text-shadow: 0rem 0.125rem 0.375rem rgba(30, 211, 84, 0.473);
+}
+
+#lookup{
+  background-image: url(finals_fafa.jpg);
+  background-size: cover;
+}
+
+#myInfo{
+    color: wheat;
+    font-family: cursive;
+}
