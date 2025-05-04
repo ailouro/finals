@@ -11,22 +11,6 @@ async function getMyIP() {
   }
 }
 
-async function lookupIP() {
-  const ip = document.getElementById("customIp").value.trim();
-  if (!ip) return alert("Please enter an IP address.");
-  const url = `https://ipinfo.io/${ip}?token=${accessToken}`;
-  try {
-    const res = await fetch(url);
-    const data = await res.json();
-    if (data && !data.error) {
-      displayInfo(data, "customInfo");
-    } else {
-      document.getElementById("customInfo").innerText = "Invalid or private IP.";
-    }
-  } catch (err) {
-    document.getElementById("customInfo").innerText = "Error fetching IP info.";
-  }
-}
 
 function displayInfo(data, elementId) {
   const timeZone = data.timezone;
@@ -52,10 +36,6 @@ document.addEventListener("click", function (event) {
 
   if (!myInfoWrapper.contains(event.target)) {
     document.getElementById("myInfo").classList.add("hidden");
-  }
-
-  if (!customInfoWrapper.contains(event.target)) {
-    document.getElementById("customInfo").classList.add("hidden");
   }
 });
 
