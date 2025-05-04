@@ -14,7 +14,6 @@ body {
 
 #playMusicBtn {
   background-color: transparent;
-  border: 0.125rem solid wheat;
   color: wheat;
   padding: 0.5rem 1rem;
   border-radius: 1.5rem;
@@ -26,10 +25,13 @@ body {
 
 #playMusicBtn:hover {
   background-color: rgba(18, 78, 10, 0.527);
-  color: rgba(78, 197, 78, 0.301);
+  color: rgba(31, 56, 31, 0.301);
 }
 
 
+
+
+/* Navbar */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -55,9 +57,10 @@ body {
   border-radius: 1.5rem;
 }
 
+/* Hero Section */
 .hero {
   height: 100vh;
-  position: relative;
+  position: relative; /* <--- ADD THIS */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -87,6 +90,7 @@ body {
   margin-bottom: 0.5rem;
   z-index: 1;
   font-weight: bolder;
+  color: wheat;
 }
 
 .bold {
@@ -103,7 +107,7 @@ body {
   font-family: 'Times New Roman', Times, serif;
   line-height: 1.5;
   margin-top: 1.875rem;
-  color: #fffefe;
+  color: wheat;
   margin-bottom: 2rem;
   text-align: center;
   z-index: 1;
@@ -111,13 +115,13 @@ body {
 
 a:hover{
     border-radius: 9.375rem;
-    background-color: black;
+    background-color: rgba(144, 238, 144, 0.199);
 }
 
 
 
 .cta {
-  background-color: rgb(27, 65, 31);
+  background-color: rgba(27, 65, 31, 0.61);
   color: white;
   font-family: Georgia, 'Times New Roman', Times, serif;
   padding: 0.75rem 2rem;
@@ -141,6 +145,13 @@ a:hover{
   font-weight: bolder;
   text-decoration: none;
   animation: bounce 2s infinite;
+}
+
+.scroll-down a:hover{
+    width: 3.125rem;
+    height: 3.125rem;
+    border-radius: 18.75rem;
+    background-color: rgba(144, 238, 144, 0.226);
 }
 
 @keyframes bounce {
